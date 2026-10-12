@@ -8,6 +8,7 @@ served by GitHub Pages from `main` at the repository root.
 | `index.html` (Romanian) | `https://maxe34.github.io/locliber-privacy/` | the privacy policy URL in App Store Connect and in the app's paywall |
 | `ru.html`, `en.html` | `…/ru.html`, `…/en.html` | the same policy in Russian and English |
 | `support.html` | `…/support.html` | the support URL in App Store Connect |
+| `screenshots.html` | `…/screenshots.html` | the framed App Store screenshots, `screenshots/<locale>/` — made in `asp-slots/ios/docs/screenshots/` |
 
 The three language versions say the same thing. Change one, change all three,
 and move the effective date on each.

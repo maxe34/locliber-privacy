@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LocLiber — Capturi de ecran</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e3e3e6;
+    --link: #0055ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e2229;
+      --fg: #f2f2f7;
+      --muted: #a1a1a8;
+      --rule: #33383f;
+      --link: #4d8bff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .9rem; letter-spacing: -.01em; }
+  .langs { font-size: .95rem; margin: 0 0 1rem; color: var(--muted); }
+  .langs a { margin-right: .75rem; }
+  a { color: var(--link); }
+  .shots {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
+  }
+  .shots a { display: block; }
+  .shots img {
+    display: block; width: 100%; height: auto;
+    border-radius: 14px; border: 1px solid var(--rule);
+  }
+  @media (max-width: 640px) {
+    .shots {
+      grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%;
+      overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem;
+    }
+    .shots a { scroll-snap-align: start; }
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>LocLiber — Capturi de ecran</h1>
+  <p class="langs"><a href="#ro">Română</a> · <a href="#ru">Русский</a> · <a href="#en">English</a></p>
+
+  <h2 id="ro">Română</h2>
+  <div class="shots">
+    <a href="screenshots/ro/01-calendar.png"><img src="screenshots/ro/01-calendar.png" alt="Locuri libere, văzute primele" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/ro/02-languages.png"><img src="screenshots/ro/02-languages.png" alt="Limba ta, dintr-o atingere" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/ro/03-help.png"><img src="screenshots/ro/03-help.png" alt="Ajutorul e la un mesaj" loading="lazy" width="1320" height="2868"></a>
+  </div>
+
+  <h2 id="ru" lang="ru">Русский</h2>
+  <div class="shots" lang="ru">
+    <a href="screenshots/ru/01-calendar.png"><img src="screenshots/ru/01-calendar.png" alt="Свободные даты — вы видите первым" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/ru/02-languages.png"><img src="screenshots/ru/02-languages.png" alt="Ваш язык — в одно касание" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/ru/03-help.png"><img src="screenshots/ru/03-help.png" alt="Помощь — в одном сообщении" loading="lazy" width="1320" height="2868"></a>
+  </div>
+
+  <h2 id="en" lang="en">English</h2>
+  <div class="shots" lang="en">
+    <a href="screenshots/en-US/01-calendar.png"><img src="screenshots/en-US/01-calendar.png" alt="Free exam slots, seen first" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/en-US/02-languages.png"><img src="screenshots/en-US/02-languages.png" alt="Your language, one tap away" loading="lazy" width="1320" height="2868"></a>
+    <a href="screenshots/en-US/03-help.png"><img src="screenshots/en-US/03-help.png" alt="Help is one message away" loading="lazy" width="1320" height="2868"></a>
+  </div>
+
+  <footer><a href="support.html">Suport</a> · <a href="./">Confidențialitate</a> · LocLiber pentru iPhone · Maxim Cucerenco</footer>
+</main>
+</body>
+</html>
